@@ -1,6 +1,6 @@
 # Problem Solving With Data Structures And Algorithms Using Java
 
-This project is developed for understanding problem solving with data structures and algorithms using Java programming languages. 
+This project is developed for understanding problem solving with data structures and algorithms using Java programming language. 
 
 # Contents
 
