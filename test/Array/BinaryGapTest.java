@@ -3,6 +3,7 @@ package Array;
 import main.Array.BinaryGap;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BinaryGapTest {
@@ -13,6 +14,6 @@ public class BinaryGapTest {
         int num = 529;
 
         var result = BinaryGap.longestBinaryGap(num);
-        assertEquals(6,result);
+        assertEquals(4,result);
     }
 }

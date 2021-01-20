@@ -1,11 +1,13 @@
 package Array;
 
+import main.Array.FrogRiverOne;
+import main.Array.MaximumPossibleValue;
 import main.Array.PivotIndex;
 import main.Array.SortArrayByParity;
 import main.String.NumOfUniqueEmails;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ArrayTest {
 
@@ -16,6 +18,7 @@ public class ArrayTest {
         var result = PivotIndex.findPivotIndex(arr);
         assertEquals(3, result);
     }
+
     @Test
     void sortArrayByParity() {
         int[] arr = {1, 7, 3, 6,2, 4,9,5,0,8};
@@ -32,5 +35,18 @@ public class ArrayTest {
         assertArrayEquals(expected,result);
     }
 
+    @Test
+    void frogRiverSolution() {
+        int[] arr = {1,3,1,4,2,3,5,4};
+        var result = FrogRiverOne.frogRiverOne(5,arr);
+        assertEquals(6,result);
+    }
+
+    @Test
+    void MaximumPossibleValueTest(){
+        int num = -661;
+        var result = MaximumPossibleValue.MaximumPossibleValue(num);
+        assertEquals(-5661,result);
+    }
 
 }

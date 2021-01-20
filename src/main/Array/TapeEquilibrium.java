@@ -91,8 +91,4 @@ public class TapeEquilibrium {
 
         return min;
     }
-
-
-
-
 }

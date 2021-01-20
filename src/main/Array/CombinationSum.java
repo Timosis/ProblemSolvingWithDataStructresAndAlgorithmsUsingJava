@@ -6,7 +6,8 @@ import java.util.List;
 
 /*
 *
-*  Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.
+*  Given a collection of candidate numbers (candidates) and a target number (target),
+*  find all unique combinations in candidates where the candidate numbers sums to target.
 *  Each number in candidates may only be used once in the combination.
 *
 *  Note:
@@ -64,7 +65,6 @@ public class CombinationSum {
             path.add(path.size(),candidates[i]);
             findCombination(candidates,i + 1, target - candidates[i], path, res);
             path.remove(path.size() - 1);
-
         }
     }
 }
