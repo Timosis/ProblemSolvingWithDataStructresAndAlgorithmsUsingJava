@@ -44,9 +44,9 @@ public class ArrayTest {
 
     @Test
     void MaximumPossibleValueTest(){
-        int num = -661;
+        int num = 7643 ;
         var result = MaximumPossibleValue.MaximumPossibleValue(num);
-        assertEquals(-5661,result);
+        assertEquals(76543,result);
     }
 
 }

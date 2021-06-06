@@ -11,7 +11,7 @@ public class BinaryGapTest {
     @Test
     public void BinaryGapTest(){
 
-        int num = 529;
+        int[] num = {0, 1, 1, 1, 0, 1, 1, 1, 0, 1};
 
         var result = BinaryGap.longestBinaryGap(num);
         assertEquals(4,result);

@@ -21,29 +21,25 @@ package main.Array;
 * */
 public class BinaryGap {
 
-    public static int longestBinaryGap(int number){
-        int finalGap = 0;
-        int count = 0;
-
-        if (number == 1) {
-            return 0;
-        }
-
-        char[] binaryRep = Integer.toBinaryString(number).toCharArray();
-
-        for (int i = 0; i < binaryRep.length; i++) {
-
-            if (binaryRep[i] == '0') {
-                count++;
-                continue;
-            }
-            else{
-                if (count > finalGap) {
-                    finalGap = count;
+    public static int longestBinaryGap(int[] A){
+        int n = A.length;
+        int i = n - 1;
+        int result = -1;
+        int k = 0, maximal = 0;
+        while (i > 0) {
+            if (A[i] == 1) {
+                k = k + 1;
+                if (k <= maximal) {
+                    maximal = k;
+                    result = i;
                 }
             }
-            count = 0;
+            else
+                k = 0;
+            i = i - 1;
         }
-        return finalGap;
+        if (A[i] == 1 && k + 1 > maximal)
+            result = 0;
+        return result;
     }
 }

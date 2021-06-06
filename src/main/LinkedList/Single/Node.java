@@ -1,9 +1,9 @@
 package main.LinkedList.Single;
 
 public class Node {
-    int data;
-    Node next;
-    Node(int d){
+    public int data;
+    public Node next;
+    public Node(int d){
         data = d;
     }
 }
